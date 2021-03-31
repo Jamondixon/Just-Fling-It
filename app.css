@@ -91,15 +91,16 @@ img {
 #discContainer {
     display: flex;
     flex-wrap: wrap;
-    list-style-type: none;
     margin: 0 auto;
+    width: 1175px;
+    justify-content: center;
 }
 
 h2 {
     font-family: 'Rubik', sans-serif;
-    font-size: 2vw;
+    font-size: 3vw;
     color: #5e60ce;
-    text-align: left;
+    /* text-align: left; */
     text-shadow: 2px 2px black;
     padding-top: 80px;
 }
@@ -111,7 +112,7 @@ h3{
     font-family: 'Rock Salt', cursive;
     font-weight: 900;
     font-size: 3vw;
-    text-align: left;
+    /* text-align: left; */
     color: rgb(2, 0, 0);
     text-shadow: 2px 2px #64dfdf;
 }
@@ -123,8 +124,21 @@ p {
     
 }
 .discCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-width: 320px;
-    
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    border: #64dfdf;
+    border-width: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-
+#basket {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 15%;
+}

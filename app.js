@@ -5,7 +5,6 @@ const discModel = document.querySelector('#model')
 const discSpeed = document.querySelector('#speed')
 const discImage = document.querySelector('#image')
 // const discReviews = document.querySelector('#reviews')
-// const menuIcon = document.querySelector('#menu_icon')
 const discPrice = document.querySelector('#discPrice')
 
 const handleResponse = (response) => {
@@ -15,8 +14,6 @@ const handleResponse = (response) => {
 
 fetch(discURL)
     .then(handleResponse)
-    // .then((responseJson) => {
-    //     console.log(responseJson)})
     .then(discs =>  { 
         discs.forEach(disc => createCard(disc))
     })
@@ -31,7 +28,7 @@ fetch(discURL)
         
             discCard.className = 'discCard'
             discMaker.innerText = disc.maker
-            discModel.innerText = disc.model
+            discModel.innerHTML = `<a href="disc.html?id=${disc.id}">${disc.model}</a>`
             discSpeed.innerText = disc.speed
             discImage.src = disc.image
             // discReviews.innerText = disc.reviews

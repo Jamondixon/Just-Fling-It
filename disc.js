@@ -1,27 +1,33 @@
-const discMaker = document.querySelector('#maker')
-const discModel = document.querySelector('#model')
-const discSpeed = document.querySelector('#speed')
-const discImage = document.querySelector('#image')
+// const discMaker = document.querySelector('#maker')
+// const discModel = document.querySelector('#model')
+// const discSpeed = document.querySelector('#speed')
+// const discImage = document.querySelector('#image')
 // const discReviews = document.querySelector('#reviews')
-// const menuIcon = document.querySelector('#menu_icon')
-const discPrice = document.querySelector('#discPrice')
+// const discPrice = document.querySelector('#discPrice')
+const queryParams = new URLSearchParams(window.location.search)
+const discId = queryParams.get('id')
+const showContainer = document.getElementById('show-container')
 
-
-function createCard(disc){
-    const discCard = document.createElement('div')
-    const discMaker = document.createElement('h2')
-    const discModel = document.createElement('h3')
-    const discSpeed = document.createElement('p')
-    const discImage = document.createElement('img')
-    // const discReviews = document.createElement('p')
-    
-        discCard.className = 'discCard'
-        discMaker.innerText = disc.maker
-        discModel.innerText = disc.model
-        discSpeed.innerText = disc.speed
-        discImage.src = disc.image
-        // discReviews.innerText = disc.reviews
-
-        discCard.append(discMaker, discModel, discSpeed, discImage )
-        discContainer.append(discCard)
+const handleResponse = (response) => {
+    return response.json()
 }
+
+fetch(`http://localhost:3000/discs/${discId}`)
+    .then(handleResponse)
+    .then(disc => {
+        console.log(disc)
+
+        const discModel = document.createElement('h1')
+        const discMaker = document.createElement('h2')
+        const discImage = document.createElement('img')
+        const discPrice = document.createElement('h3')
+
+        discModel.innerText = `${disc.model}`
+        discMaker.innerText = `${disc.maker}`
+        discImage.src = `${disc.image}`
+        discPrice.innerText = `$${disc.price}`
+
+
+        showContainer.append(discModel, discMaker, discImage, discPrice)
+        
+    })

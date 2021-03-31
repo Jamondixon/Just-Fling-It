@@ -1,0 +1,62 @@
+html { 
+    background: url(images/colors.jpeg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive;
+    font-weight: 900;
+    font-size: 8vw;
+    text-align: center;
+    color: #5e60ce;
+    text-shadow: 2px 2px #64dfdf;
+    
+}
+h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 6vw;
+    color: #5e60ce;
+    text-align: left;
+    text-shadow: 5px 5px black;
+    
+}
+h3{
+    font-family: 'Rock Salt', cursive;
+    font-weight: 900;
+    font-size: 4vw;
+    /* text-align: left; */
+    color: #5e60ce;
+    text-shadow: 2px 2px #64dfdf;
+    vertical-align: middle;
+}
+img {
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    
+}
+#basket {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%;
+    height: 15%;
+}
+
+#show-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
