@@ -13,7 +13,7 @@
     <title>Just Fling It</title>
 </head>
 <body>
-    <img id="basket" src="images/basket.png"></img>
+    <!-- <img id="basket" src="images/basket.png"></img> -->
     <h1>Just Fling It</h1>
     
     <button class="tablink" onclick="openCard('Innova', this, '#5390d9')" id="defaultOpen">Innova</button>
@@ -44,7 +44,7 @@
                 >
                 <input type="submit"
                 value="search"
-                id="search"
+                id="searchButton"
                 class="input"
                 >
             </form>
@@ -52,16 +52,16 @@
     </div>
 
     
-    <!-- <section> -->
-        <nav>   
+    
+        <form method="POST">   
             <div  class="login">
                 <input type="text" id="username" placeholder="Username:" class="input">
                 <input type="password" id="password" placeholder="Password:" class="input">
                 <input type="submit" id="login_submit" value="Login" class="input">
             </div>
-        </nav>
-        <!-- </section> -->
-        <div id="discContainer"></div>
+        </form>
+    <ul id="searchResults"></ul>
+    <div id="discContainer"></div>
     
     <script src="app.js"></script>
 </body>
