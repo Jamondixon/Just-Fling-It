@@ -26,7 +26,7 @@ fetch(`http://localhost:3000/discs/${discId}`)
 
         discModel.innerText = `${disc.model}`  
         discMaker.innerText = `${disc.maker}`
-        discAttributes.innerText = `${disc.speed} ${disc.glide} ${disc.turn}  ${disc.fade}` 
+        discAttributes.innerText = `${disc.speed}/ ${disc.glide}/ ${disc.turn}/ ${disc.fade}` 
         discImage.src = `${disc.image}`
         discPrice.innerText = `$${disc.price}`
         
@@ -35,3 +35,9 @@ fetch(`http://localhost:3000/discs/${discId}`)
         showContainer.append(discModel, discMaker, discAttributes, discImage, discPrice)
         
     })
+    
+
+    // const element = document.getElementById('addToBasket').className = ('animate__animated animate__bounceOut')
+    // element.classtList.remove('animate__animated animate__bounceOut')
+    // void element.offsetWidth
+    // element.classList.add('animate__animated animate__bounceOut')
