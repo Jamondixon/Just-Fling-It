@@ -35,7 +35,6 @@ h3 {
     font-family: 'Rock Salt', cursive;
     font-weight: 900;
     font-size: 4vw;
-    /* text-align: left; */
     color: #5e60ce;
     text-shadow: 2px 2px #64dfdf;
     vertical-align: middle;
@@ -44,13 +43,11 @@ h4 {
     font-family: 'Rock Salt', cursive;
     font-weight: 900;
     font-size: 4vw;
-    /* text-align: left; */
     color: #5e60ce;
     text-shadow: 2px 2px #64dfdf;
     vertical-align: middle;
     top: 400px;
 }
-
 
 img {
     width: 30vw;
@@ -72,15 +69,6 @@ img {
     justify-content: center;
     align-items: center;
 }
-
-/* button {
-width: 40%;
-height: 10vh;
-color:#5e60ce;
-background-color: #64dfdf;
-cursor: pointer;
-font-family: 'Rubik', sans-serif;
-} */
 
 .tablink {
     background-color: #000;
@@ -104,8 +92,6 @@ font-family: 'Rubik', sans-serif;
     animation-duration: 2s;
 }
 
-
-
 .tablink:hover {
     
     box-shadow:inset 0 -4px 0 0 #64dfdf,
@@ -114,6 +100,4 @@ font-family: 'Rubik', sans-serif;
      0 0 3px 3px#5e60ce,
      0 0 4px 4px#5e60ce,
      0 0 5px 5px#5e60ce;
-
-
 }

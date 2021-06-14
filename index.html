@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,61 +11,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Just Fling It</title>
 </head>
+
 <body>
     <!-- <img id="basket" src="images/basket.png"></img> -->
-    <h1 class="animate__animated animate__rubberBand animate__delay-2s animate__slower animate__repeat-3">Just Fling It</h1>
+    <h1 class="animate__animated animate__rubberBand animate__delay-2s animate__slower animate__repeat-3">Just Fling It
+    </h1>
     <h3 id="slogan">"Your Custom Disc Connection"</h3>
-    
+
     <button class="tablink" onclick="openCard('Innova', this, '#5390d9')" id="defaultOpen">Innova</button>
     <button class="tablink" onclick="openCard('Discraft', this, '#5e60ce')">Discraft</button>
     <button class="tablink" onclick="openCard('MVP', this, '#6930c3')">MVP</button>
-    
+
     <div>
-        
-        <nav>  
+
+        <nav>
             <form id="disc-form">
-                <input type="text" 
-                name="maker"
-                placeholder="maker"
-                id="maker"
-                class="input"
-                >
-                <input type="text" 
-                name="model"
-                placeholder="model"
-                id="model"
-                class="input" 
-                >
-                <input type="text" 
-                name="speed"
-                placeholder="speed"
-                id="speed"
-                class="input"
-                >
-                <input type="submit"
-                value="search"
-                id="searchButton"
-                class="input"
-                >
+                <input type="text" name="maker" placeholder="maker" id="maker" class="input">
+                <input type="text" name="model" placeholder="model" id="model" class="input">
+                <input type="text" name="speed" placeholder="speed" id="speed" class="input">
+                <input type="submit" value="search" id="searchButton" class="input">
             </form>
-        </nav> 
+        </nav>
     </div>
 
-    
-    
-        <form method="GET">   
-            <div  class="login">
-                <input type="text" id="username" placeholder="Username:" class="input">
-                <input type="password" id="password" placeholder="Password:" class="input">
-                <input type="submit" id="login_submit" value="Login" class="input">
-            </div>
-        </form>
+    <form method="GET">
+        <div class="login">
+            <input type="text" id="username" placeholder="Username:" class="input">
+            <input type="password" id="password" placeholder="Password:" class="input">
+            <input type="submit" id="login_submit" value="Login" class="input">
+        </div>
+    </form>
     <ul id="searchResults"></ul>
     <div id="discContainer"></div>
-    
+
     <script src="app.js"></script>
 </body>
 
