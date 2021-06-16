@@ -37,25 +37,3 @@ const searchButton = document.getElementById('searchButton')
 const searchQuery = document.getElementById('maker')
 const searchResults = document.getElementById('#searchResults')
 
-
-// document.getElementById('searchButton').addEventListener('click', (handleSearchClick));
-
-// fetch(discURL)
-//     .then(handleResponse)
-//     // .then((json) => displayCharacters(json.results))
-//     .then((json) => displayCharacters(json))
-    
-
-
-//     function displayCharacters(characterList) {
-//     console.log(characterList)
-//     }
-
-    
-//     function handleSearchClick(e) {
-//         const makerQuery = document.getElementById('searchQuery').value
-        
-//         fetch(`${DiscURL}?maker=${makerQuery}`)
-//         .then(handleResponse)
-//         .then((json) => displayCharacters(json))
-//     }
