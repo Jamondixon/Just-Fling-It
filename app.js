@@ -1,4 +1,4 @@
-const discURL = "http://localhost:3000/discs"
+const discURL = "https://just-fling-it.herokuapp.com/discs"
 const discContainer = document.querySelector('#discContainer')
 const discModel = document.querySelector('#model')
 const discSpeed = document.querySelector('#speed')
