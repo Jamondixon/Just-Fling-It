@@ -13,7 +13,7 @@ const handleResponse = (response) => {
     return response.json()
 }
 
-fetch(`http://localhost:3000/discs/${discId}`)
+fetch(`https://just-fling-it.herokuapp.com/discs/${discId}`)
     .then(handleResponse)
     .then(disc => {
         console.log(disc)
